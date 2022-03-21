@@ -10,7 +10,7 @@
         }
 
         .field-error {
-            border-color: #dc3545;
+            border-color: #ff0000;
             color: #dc3545;
         }
     </style>
@@ -61,7 +61,8 @@
             <div class="col">
                 <button class="w-100 btn btn-secondary btn-lg"
                         onclick="location.href='items.html'"
-                        th:onclick="|location.href='@{/validation/v1/items}'|" type="button" th:text="#{button.cancel}">취소
+                        th:onclick="|location.href='@{/validation/v1/items}'|" type="button" th:text="#{button.cancel}">
+                    취소
                 </button>
             </div>
         </div>
