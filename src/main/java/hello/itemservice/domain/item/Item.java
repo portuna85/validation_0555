@@ -14,15 +14,15 @@ public class Item {
 
     private Long id;
 
-    @NotNull(groups = UpdateCheck.class)        // 수정 요구사항 추가
+    // @NotNull(groups = UpdateCheck.class)        // 수정 요구사항 추가
     private String itemName;
 
-    @NotNull(groups = {SaveCheck.class, UpdateCheck.class})
-    @Range(max=100000, min=100, groups = {SaveCheck.class, UpdateCheck.class})
+    // @NotNull(groups = {SaveCheck.class, UpdateCheck.class})
+    // @Range(max=100000, min=100, groups = {SaveCheck.class, UpdateCheck.class})
     private Integer price;
 
-    @NotNull(groups = {SaveCheck.class, UpdateCheck.class})
-    @Max(value = 9999, groups = {SaveCheck.class})
+    // @NotNull(groups = {SaveCheck.class, UpdateCheck.class})
+    // @Max(value = 9999, groups = {SaveCheck.class})
     private Integer quantity;
 
     public Item() {
